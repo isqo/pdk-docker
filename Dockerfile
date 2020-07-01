@@ -8,7 +8,7 @@ ADD pdk-release.env .
 
 RUN apt-get update && \
     apt-get install -y curl && \
-    apt-get install build-essential && \
+    apt-get install -y build-essential && \
     ./install-pdk-release.sh && \
     ./install-onceover.sh && \
     apt-get purge -y curl && \
